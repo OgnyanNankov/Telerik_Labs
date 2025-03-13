@@ -19,3 +19,8 @@ let litrePerKm = litre / km;
 let litrePerHour = litrePerKm * 100;
 
 print(`${Math.floor(litrePerHour)} litres per 100 km`);
+
+// print(litre);
+// print(km);
+// print(litrePerKm);
+// print(litrePerHour);
