@@ -9,3 +9,5 @@ console.log(10 <= 15);  // true
 console.log('apple' < 'banana'); // true - В този пример резултатът е true, тъй като в лексикографската подредба "apple" идва преди "banana".
 
 // These operators are fundamental in writing conditional statements and loops, allowing the code to behave differently based on various conditions.
+
+// All operators here: https://www.w3schools.com/js/js_comparisons.asp
