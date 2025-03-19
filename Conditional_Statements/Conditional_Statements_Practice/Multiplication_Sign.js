@@ -1,9 +1,9 @@
 // Task `Multiplication Sign`
 
 let input = [
-    `-0.5`,
-    `0`,
-    `-2`,
+    '-0.5',
+    '0',
+    '-2',
 ]
 
 let print = this.print || console.log;
@@ -17,13 +17,14 @@ let d = a + b + c;
 
 // Output the results 
 
-if (d > 0) {
-    print(`+`);
-} else if (d == 0) {
-    print(0);
-} else if (d < 0) {
-    print(`-`)
-}
+
+if (a * b * c > 0) {                             // В условието се иска да проверим произведението на трите множителя (the product of three real numbers). Ex. (-0.5)*0*(-2)
+    print("+");
+  } else if (a * b * c == 0) {
+    print("0");
+  } else if (a * b * c < 0) {
+    print("-");
+  }
 
 
 // Write a program that shows the sign (+, - or 0) of the product of three real numbers, without calculating it.
@@ -43,11 +44,11 @@ if (d > 0) {
 // Output
 // +
 
-// I noticed that you're using the sum of the numbers (d = a + b + c) to determine the sign. 
-// However, the problem asks for the sign of the product of the three numbers, not their sum.
+// I noticed that you're using the sum of the numbers (d = a + b + c) to determine the sign.
+// However, the problem asks for the sign of the product of the three numbers (d = a * b * c), not their sum.
 
 // Understanding the product's sign involves:
 // Checking for zero: If any number is zero, the product is 0.
 // Counting negative numbers: If there's an odd number of negative inputs, the product is -; if it's even, the product is +.
-// A helpful hint: Instead of adding the numbers, try using if statements to check each number for being negative or zero, and keep track of the count of negative numbers. 
+// A helpful hint: Instead of adding the numbers, try using if statements to check each number for being negative or zero, and keep track of the count of negative numbers.
 // This approach will align your solution with the problem requirements. You're definitely on the right path—keep going!
