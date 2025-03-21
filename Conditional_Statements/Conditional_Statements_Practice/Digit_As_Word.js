@@ -1,3 +1,5 @@
+// Task `Digits as word`
+
 let input = [
     '5',
 ];
