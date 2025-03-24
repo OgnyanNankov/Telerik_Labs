@@ -1,6 +1,7 @@
 // Requirements
-// For our project we will need to check if the user savings are enough to buy a new phone based on its price. Also based on a certain user rating we should be able to define the user credit raditng. Write program that:
+// For our project we will need to check if the user savings are enough to buy a new phone based on its price. Also based on a certain user rating we should be able to define the user credit raditng. 
 
+// Write program that:
 // Comparisons: Compare a user's savings against the cost of a new phone and log whether they can afford it.
 // Conditional Logic: Implement a simple logic to determine and log the message based on the user's savings.
 // Switch Statement: Given a user rating (1-5), use a switch statement to log a message ranging from "Excellent" to "Poor", including a default case for invalid ratings.

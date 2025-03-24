@@ -9,8 +9,8 @@ let y = -2.5 / 7.5;  // -0.3333333333333333
 
 // Get only the whole part of the division
 
-let x2 = parseInt(11.0 / 3.0);  // 3     Witghout perseInt - 3.6666666666666665
-let y2 = parseInt(2.5 / 7.5);   // 0     Witghout perseInt - 0.3333333333333333
+let x2 = parseInt(11.0 / 3.0);  // 3     Witghout parseInt - 3.6666666666666665
+let y2 = parseInt(2.5 / 7.5);   // 0     Witghout parseInt - 0.3333333333333333
 
 console.log(x2);
 console.log(y2);
