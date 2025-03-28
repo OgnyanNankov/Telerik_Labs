@@ -22,3 +22,6 @@ if (age < 30) {
 }
 
 console.log('Age is under 30: ' + under30);
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+// https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Conditionals#basic_if...else_syntax
