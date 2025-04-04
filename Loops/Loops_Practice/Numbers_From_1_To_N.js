@@ -14,7 +14,7 @@ let n = +gets();
 let result = '';                                                       // Initialize an empty string 'result' to store the sequence of numbers
 
 for (let i = 1; i <= n; i++) {                                         // Start a loop that iterates from 1 up to (but not including) N
-    result += i + ' ';                                                 // Сhorthand for result = result + i + ' ';  - It concatenates the current number 'i' and a space to the 'result' string
+    result += i + ' ';                                                 // Shorthand for result = result + i + ' ';  - It concatenates the current number 'i' and a space to the 'result' string
 }
 
 // Trim the final space and print
