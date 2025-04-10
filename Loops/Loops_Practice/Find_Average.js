@@ -1,4 +1,4 @@
-// Task 'Find Average' 
+// Task 'Find Average'                                                        // Трябва да се пресметне средното аритметично на N на брой числа, като резултатът се отпечатва с точно две цифри след десетичната запетая.
 
 let input = [
     '4',
@@ -17,7 +17,7 @@ let n = +gets();
 // Process the data
 let sum = 0;
 
-for (let i = 1; i < n; i++) {
+for (let i = 0; i < n; i++) {
     let value = +gets();
     sum += value;
 }

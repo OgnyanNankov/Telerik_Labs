@@ -1,6 +1,6 @@
 // Task 'Find Maximum Value'
 
-let input = [
+let input = [                                                       // Това е тестов вход – първото число '3' показва, че ще има още 3 числа. Следват самите числа '1', '2', '3'.
     '3',
     '1',
     '2',
@@ -14,20 +14,33 @@ let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 let n = +gets();
 
 // Process the data
-let max = -Infinity;
+let max = -Infinity;                                                // Тук инициализираш променливата, в която ще държиш най-голямото число.
 
 for (let i = 1; i <= n; i++) {
 
     let n2 = +gets();                                               // Можем да представим двата реда и така: let currentNum = +gets();            
     let currentNum = n2
 
-    if (currentNum > max) {
+    if (currentNum > max) {                                         // Ако текущото число е по-голямо от текущото max, записваме го като ново max.
         max = currentNum;
     }
 }
 
 // Output result
 print(max);
+
+
+// Защо -Infinity? За да може всяко реално число да бъде по-голямо и да замести max още при първата итерация.
+// Ако беше започнал с 0, и всички числа бяха отрицателни, max щеше да остане 0 – грешен резултат!
+
+// Какво прави програмата, стъпка по стъпка:
+// Чете от входа едно число n – това е броят на следващите числа, които ще получиш.
+// След това чете n на брой реални или цели числа.
+// Обхожда всяко от тях и:
+// сравнява го с текущото "най-голямо" (max)
+// ако текущото е по-голямо → записва го като новото max
+// Накрая отпечатва най-голямото от въведените числа.
+
 
 // Read the first line of input from the console. Use the gets() function to read the input as a string, and the Number() function to convert the string to a number. Store the resulting number in a variable called n.
 // Initialize a variable called max with a value of negative infinity. This will ensure that any number will be larger than max.
