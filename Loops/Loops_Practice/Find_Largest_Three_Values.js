@@ -1,5 +1,5 @@
 // Task 'Find Largest Three Numbers'                                // Да се намерят трите най-големи числа от поредица, която получаваме от входа (например от потребителя или от масив).
-                                                                 
+
 let input = [                                                       // Това е тестов вход – първото число '3' показва, че ще има още 3 числа. Следват самите числа '3', '1', '2'.
     '3',
     '3',
@@ -12,10 +12,10 @@ let print = this.print || console.log;
 let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 
 // Read the input from the system
-let n = +gets();                                                          // Прочитаме първия ред: '6' → превръщаме в число → n = 6
+let n = +gets();                                                          // Прочитаме първия ред: '3' → превръщаме в число → n = 3
 let largest = -Infinity;                                                  // Инициализираме трите стойности с най-ниската възможна – така че всяко първо реално число да ги замести..
 let secondLargest = -Infinity;                                            // пример secondLargest = -Infinity – така всяко реално число ще е по-голямо и ще замести secondLargest при първата проверка.
-let thirdLargest = -Infinity;                                             
+let thirdLargest = -Infinity;
 
 // Process the data
 

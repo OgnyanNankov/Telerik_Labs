@@ -9,19 +9,19 @@ let print = this.print || console.log;
 let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 
 // Read the input from the system
-let n = +gets();
-let numbers = gets().split(' ').map(Number);                         // рочитаме втория ред – '2 1 1 6 3' / .split(' ') → разделя го на масив: [ '2', '1', '1', '6', '3' ] / .map(Number) → превръща всеки елемент в число: [2, 1, 1, 6, 3]
+let n = +gets();                                                     // Четем първия ред от входа ('5') и го превръщаме в число → n = 5. Това е броят на числата, които ще обработваме.
+let numbers = gets().split(' ').map(Number);                         // Прочитаме втория ред – '2 1 1 6 3' / .split(' ') → разделя го на масив: [ '2', '1', '1', '6', '3' ] / .map(Number) → превръща всеки елемент в число: [2, 1, 1, 6, 3]
 
 // Process the data                                                  // Инициализираме 2 променливи за произведението:
 let evenProduct = 1;                                                 // evenProduct за числата на четни позиции (позиции: 2, 4, …)
 let oddProduct = 1;                                                  // oddProduct за числата на нечетни позиции (позиции: 1, 3, …)
 
-for (let i = 0; i < n; i++) {                                            // Започва цикъл, който ще се изпълни n = 5 пъти (от i = 0 до i = 4)
+for (let i = 0; i < n; i++) {                                        // Започва цикъл, който ще се изпълни n = 5 пъти (от i = 0 до i = 4)
     let num = numbers[i];                                            // Всяка итерация взима следващото число от масива numbers[i]
     if ((i + 1) % 2 === 0) {                                         // Even index - (i + 1) се използва, защото позициите са броени от 1 (човешко броене), а i започва от 0 (програмистко броене)
         evenProduct *= num;                                          // Ако (i + 1) % 2 === 0 → позицията е четна → умножаваме evenProduct *= num
     } else {                                                         // Odd index 
-        oddProduct *= num;                                           // Ако позицията е нечетна → умножаваме oddProduct *= num
+        oddProduct *= num;                                           // Ако позицията е нечетна (има остатък) → умножаваме oddProduct *= num
     }
 }
 
@@ -40,7 +40,6 @@ if (oddProduct === evenProduct) {                                    // След
 // Нечетни позиции: 2, 1, 3 → oddProduct = 2 × 1 × 3 = 6
 // Четни позиции: 1, 6 → evenProduct = 1 × 6 = 6
 // Те са равни → yes 6
-
 
 
 // Description

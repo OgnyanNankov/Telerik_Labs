@@ -1,4 +1,4 @@
-// Task 'Numbers from 1 To N'
+// Task 'Numbers from 1 To N'                                          // Да се прочете едно цяло число N, и да се отпечатат всички числа от 1 до N, разделени с интервали – на един ред. Ако N = 5 → изходът ще бъде: 1 2 3 4 5
 
 let input = [
     '5',
@@ -8,19 +8,26 @@ let print = this.print || console.log;
 let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 
 // Read the input from the system
-let n = +gets();
+let n = +gets();                                                       // Четем първия (и единствен) ред от входа – '5'
 
 // Process the data
-let result = '';                                                       // Initialize an empty string 'result' to store the sequence of numbers
+let result = '';                                                       // Създаваме променлива result, в която ще натрупваме като текст числата от 1 до N – Започваме с празен стринг ''
 
-for (let i = 1; i <= n; i++) {                                         // Start a loop that iterates from 1 up to (but not including) N
-    result += i + ' ';                                                 // Shorthand for result = result + i + ' ';  - It concatenates the current number 'i' and a space to the 'result' string
-}
+for (let i = 1; i <= n; i++) {                                         // Цикъл, който започва от i = 1 и включва n, т.е. от 1 до 5. В този случай – ще направи 5 итерации: за i = 1, 2, 3, 4, 5
+    result += i + ' ';                                                 // Това е съкратено изписване на: result = result + i + ' '; При всяка итерация добавяме числото i към низа result, заедно с един интервал.
+}                                                                      // Пример: след първата итерация: '1 ', след втората: '1 2 ', след петата: '1 2 3 4 5 '
 
 // Trim the final space and print
 print(result);
 
 
+// Визуализация стъпка по стъпка – при n = 5
+// Итерация	 i	 result след тази стъпка
+// 1	     1	 '1 '
+// 2	     2	 '1 2 '
+// 3	     3	 '1 2 3 '
+// 4	     4	 '1 2 3 4 '
+// 5	     5	 '1 2 3 4 5 '
 
 // Read the input number from the console. Use the gets() function to read the input as a string, and the Number() function to convert the string to a number. Store the resulting number in a variable called N.
 // Initialize an empty string called result to store the sequence of numbers.

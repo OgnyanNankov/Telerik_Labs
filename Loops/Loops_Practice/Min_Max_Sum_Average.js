@@ -1,4 +1,4 @@
-// Task 'Min Max Sum Average' 
+// Task 'Min Max Sum Average'                                              // Да се прочетат n на брой числа от входа и да се изчислят: минимум (min), максимум (max), сума (sum), средно аритметично (avg)
 
 let input = [                                                              // Инпутът е тестов вход – масив от низове. Първият елемент '3' е броят на числата, а останалите са самите числа. Това симулира поведение, подобно на четене от конзола.
     '3',
@@ -11,29 +11,29 @@ let print = this.print || console.log;
 let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 
 // Read the input from the system
-let n = +gets();
+let n = +gets();                                                              // Четем първия ред от входа ('3') и го превръщаме в число → n = 3. Това е броят на числата, които ще обработваме.
 
 // Process the data
-let sum = 0;                                                                  // Защо -Infinity и +Infinity?
+let sum = 0;                                                                  // Инициализираме променлива sum, в която ще събираме всичките въведени числа.
 let max = -Infinity;                                                          // max = -Infinity – така всяко реално число ще е по-голямо и ще замести max при първата проверка.
 let min = +Infinity;                                                          // min = +Infinity – всяко реално число ще е по-малко, така че ще замести min. Това гарантира, че първото число, което прочетеш, автоматично ще зададе начални реални стойности на min и max.
 
-for (let i = 0; i < n; i++) {                                                 // Цикъл, който ще се изпълни n пъти. Във всяка итерация: Чете число от входа и го добавя го към sum
-    let num = +gets();
-    sum += num;
+for (let i = 0; i < n; i++) {                                                 // Цикъл, който ще се изпълни n пъти (в случая 3 пъти – за числата 2, 5, 1). Във всяка итерация: Чете число от входа и го добавя го към sum.  
+    let num = +gets();                                                        // Четем следващото число от входа
+    sum += num;                                                               // Добавяме текущото число към общата сума sum
 
-    let currentNum = num;
+    let currentNum = num;                                                     // Просто даваме по-описателно име на текущото число – това не е задължително, но прави кода по-четим (може директно да използваме num по-нататък).
 
     if (currentNum > max) {                                                   // Проверява дали текущото число е по-голямо от текущото max: → ако да, обновява max
-        max = currentNum;
+        max = currentNum;                                                     // Иначе казано: Ако текущото число е по-голямо от сегашния максимум, обновяваме max
     }
 
     if (currentNum < min) {                                                   // Проверява дали текущото число е по-малко от текущото min: → ако да, обновява min
-        min = currentNum;
+        min = currentNum;                                                     // Иначе казано: Ако текущото число е по-малко от сегашния минимум, обновяваме min
     }
 }
 
-let average = sum / n;                                                        // Изчислява средноаритметичното (avg) от всички числа.
+let average = sum / n;                                                        // Изчислява средноаритметичното (avg) от всички числа, апример: (2 + 5 + 1) / 3 = 2.66
 
 print(`min=${min.toFixed(2)}`);
 print(`max=${max.toFixed(2)}`);
@@ -62,12 +62,3 @@ print(`avg=${average.toFixed(2)}`);
 // Constraints
 // 1 <= N <= 1000
 // All numbers will be valid numbers that will be in the range [-10000, 10000]
-
-// Read the first line of input from the console using the gets() function. Convert the input string to a number using the Number() function. Store the resulting number in a variable called N.
-// Initialize a variable called sum to 0. This variable will be used to calculate the sum of the numbers.
-// Initialize two variables called min and max to store the minimum and maximum values. Set min to positive infinity and max to negative infinity to ensure that they are correctly updated in the loop.
-// Start a for loop that will iterate N times. The variable i is the loop counter.
-// Inside the loop, read the next number from the input using the gets() function. Convert the input string to a number using the Number() function. Store the resulting number in a variable called num.
-// Add num to the sum using the += operator.
-// Update min and max if num is lower or higher than the current values respectively. Use the if statement and the less than (<) and greater than (>) operators to perform these checks.
-// After the loop, print the minimum, maximum, sum, and average values to the console using the console.log() function. Format each value to two decimal places using the toFixed() method. Use template literals to format the output as strings in the required format.
