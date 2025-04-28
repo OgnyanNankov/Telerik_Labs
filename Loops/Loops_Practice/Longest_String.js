@@ -64,7 +64,6 @@ print(longestFood);
 
 
 
-
 // Условия и упътване 
 // Initialize a variable called longestFood to an empty string. This variable will be used to store the food with the longest name.
 // Start a while loop that will continue indefinitely. This is because we don't know in advance how many foods the user will enter.
