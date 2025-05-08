@@ -18,7 +18,6 @@ let secondLargest = -Infinity;                                            // п�
 let thirdLargest = -Infinity;
 
 // Process the data
-
 for (let i = 0; i <= n; i++) {                                            // Цикъл, който се върти n пъти (3 пъти в този случай).
     let nextNumber = +gets();                                             // всеки път прочитаме следващото число и го превръщаме в number 
 
