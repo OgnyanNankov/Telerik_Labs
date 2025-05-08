@@ -35,7 +35,7 @@ console.log(`Sum of all numbers from 1 to ${number} = ${sum}`);     // Expected 
 
 let number2 = 37;
 let divisor = 2;
-let maxDivisor = Math.round(Math.sqrt(number2));
+let maxDivisor = Math.round(Math.sqrt(number2));                    // корен квадратен от 37 е 6.08, закръглено до 6 с math.round
 let isPrime = true;
 
 while (isPrime && (divisor < maxDivisor)) {
@@ -103,15 +103,15 @@ console.log(`factorial: ${factorial}`);
 //   factorial = factorial * n;
 //   n--;
 // }
-// 👉 while (true) създава безкраен цикъл, който се прекъсва с break, когато n === 1.
+// while (true) създава безкраен цикъл, който се прекъсва с break, когато n === 1.
 // Итерации:
 // Стъпка	n	factorial = factorial * n	Ново factorial
-// 1	6	1 × 6	6
-// 2	5	6 × 5	30
-// 3	4	30 × 4	120
-// 4	3	120 × 3	360
-// 5	2	360 × 2	720
-// 6	1	n === 1, прекъсваме	-
+// 1	    6	1 × 6	                    6
+// 2	    5	6 × 5	                    30
+// 3	    4	30 × 4	                    120
+// 4	    3	120 × 3	                    360
+// 5	    2	360 × 2	                    720
+// 6	    1	n === 1,                    прекъсваме	-
 // Резултат: factorial: 720
 // Точно както очакваме: 6! = 720
 
@@ -122,7 +122,7 @@ console.log(`factorial: ${factorial}`);
 let n2 = 6;                                          // Задаваме начална стойност 6
 let factorial2 = 1;                                  // Начална стойност на факториела (неутрален елемент при умножение)
 
-while (n > 1) {
+while (n2 > 1) {
   factorial2 = factorial2 * n2;
   n2--;
 }
