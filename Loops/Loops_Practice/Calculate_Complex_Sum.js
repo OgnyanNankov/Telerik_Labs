@@ -70,14 +70,11 @@ print(result.toFixed(5));
 // Output
 // 2.75000
 
-
 // Read the first number N from the console using the gets() function. Convert the input string to a number using the unary plus operator. Store the resulting number in a constant called n.
 // Read the second number X from the console using the gets() function. Convert the input string to a number using the unary plus operator. Store the resulting number in a constant called x.
 // Initialize a variable called result with the first term of the series, which is 1.
 // Initialize a variable called latestFactorial to store the current factorial value. Start with 1 because the factorial of 0 is 1.
 // Start a for loop that iterates from 1 up to and including n. The variable i is the loop counter and represents the current term number.
 // Inside the loop, calculate the factorial of i by multiplying latestFactorial by i using the *= operator.
-
 // Add the current term to the result. The current term is calculated as the factorial of i divided by x raised to the power of i. Use the Math.pow() function to calculate x to the power of i.
-
 // After the loop, print the final result to the console using the console.log() function. Round the result to five decimal places using the toFixed() method.

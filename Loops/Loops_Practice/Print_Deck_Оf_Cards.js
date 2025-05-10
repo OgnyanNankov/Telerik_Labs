@@ -33,7 +33,7 @@ for (let i = 0; i <= endIndex; i++) {                                           
 // cardFaces.indexOf('Q') → 10
 // Така разбираме докъде трябва да броим в cardFaces, за да отпечатаме всички карти от '2' до '10' (включително).
 
-// 2. suits.map(suit => `${face} of ${suit}`).join(', ');
+// 3. suits.map(suit => `${face} of ${suit}`).join(', ');
 // suits.map(...) обхожда всички бои и връща масив:
 // ['2 of spades', '2 of clubs', '2 of hearts', '2 of diamonds']
 // .join(', ') свързва тези стойности в един стринг:
