@@ -65,6 +65,8 @@ print(averageDistance);
 // Math.abs()	                         Дистанцията трябва да е положителна
 // Извън цикъла: средна стойност	     Накрая намираме средната дистанция
 
+// Подобна задача: Heaviest Word от Mock Exams
+
 // Read the target number from the console using the gets() function. Convert the input string to an integer using the parseInt() function. Store the resulting number in a constant called targetNumber.
 // Read the number of words from the console using the gets() function. Convert the input string to an integer using the parseInt() function. Store the resulting number in a constant called wordsCount.
 // Initialize a variable called distanceSum to 0. This variable will be used to store the sum of the distances of the words from the target number.
