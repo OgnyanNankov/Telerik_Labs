@@ -37,11 +37,6 @@ console.log(`[${arr}]`);
 // → това работи, защото на undefined !== 2 ще даде true
 // но при първия/последния елемент ще се пропусне, тъй като няма и двете страни
 
-
-
-
-
-
 // We will give you array and a target! You need to find all "alone" elements in the array that match the given target.
 // These elements are alone if they have values before and after them, but those values are different from them.
 // Return new version of the given array where every element that matches the target and is alone is replaced by whichever value to its left or right is larger.

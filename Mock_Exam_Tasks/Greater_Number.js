@@ -14,7 +14,7 @@ let output = [];                                                                
 let result = -1;                                                                 // result ще пази текущия резултат за елемент от arrayOne. Коментар 1
 
 for (let i = 0; i < arrayOne.length; i++) {                                      // Външен цикъл – за всеки елемент от arrayOne
-    let index = arrayTwo.indexOf(arrayOne[i]);                                   //  Намираме позицията на arrayOne[i] в arrayTwo: Например: arrayOne[0] = 2 → arrayTwo.indexOf(2) = 1
+    let index = arrayTwo.indexOf(arrayOne[i]);                                   // Намираме позицията на arrayOne[i] в arrayTwo: Например: arrayOne[0] = 2 → arrayTwo.indexOf(2) = 1
     for (let j = index + 1; j < arrayTwo.length; j++) {                          // Вътрешен цикъл – търсене вдясно: Започваме от следващата позиция вдясно от текущата. Търсим първото по-голямо число
         if (arrayTwo[j] > arrayOne[i]) {                                         // Ако намерим число, по-голямо от текущото → запазваме го в result и спираме вътрешния цикъл (понеже търсим първото)
             result = arrayTwo[j];
