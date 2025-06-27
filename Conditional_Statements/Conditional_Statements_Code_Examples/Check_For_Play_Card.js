@@ -1,4 +1,4 @@
-// Task `Check for Play Card`
+// Task `Check for Play `
 
 let input = [
     '1',
@@ -8,11 +8,11 @@ let print = this.print || console.log;
 let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 
 // Read the input from the system
-let cardSign = gets();
+let Sign = gets();
 
 // Output the results 
 
-if (cardSign == 2 || cardSign == 3 || cardSign == 4 || cardSign == 5 || cardSign == 6 || cardSign == 7 || cardSign == 8 || cardSign == 9 || cardSign == 10 || cardSign == `J` || cardSign == `Q` || cardSign == `K` || cardSign == `A`) {
+if (Sign == 2 || Sign == 3 || Sign == 4 || Sign == 5 || Sign == 6 || Sign == 7 || Sign == 8 || Sign == 9 || Sign == 10 || Sign == `J` || Sign == `Q` || Sign == `K` || Sign == `A`) {
     print(`yes`)
 } else {
     print(`no`)
@@ -21,14 +21,14 @@ if (cardSign == 2 || cardSign == 3 || cardSign == 4 || cardSign == 5 || cardSign
 
 // Much better solution 2
 
-let cardSign2 = gets();
+let Sign2 = gets();
 
 if (
-    (cardSign2 >= 2 && cardSign <= 10) ||
-    cardSign2 == "J" ||
-    cardSign2 == "Q" ||
-    cardSign2 == "K" ||
-    cardSign2 == "A"
+    (Sign2 >= 2 && Sign <= 10) ||
+    Sign2 == "J" ||
+    Sign2 == "Q" ||
+    Sign2 == "K" ||
+    Sign2 == "A"
 ) {
     print("yes");
 } else {
